@@ -16,15 +16,23 @@
         <div class="navigation">
             <div class="menu-content">
                 <div class="menu-header menu-item">
-                    <button type="button" class="menu-header-dropdown">
-                        <div class="menu-header-avatar">
-                            <img src="https://picsum.photos/id/237/32/32" alt="Org avatar">
+                    <div class="myDropdown">
+                        <button type="button" onclick="myDropdown()" class="menu-header-dropdown ooddb">
+                            <div class="menu-header-avatar ooddb" onclick="myDropdown()">
+                                <img src="https://picsum.photos/id/237/32/32" class="ooddb" alt="Org avatar" onclick="myDropdown()">
+                            </div>
+                            <div class="menu-header-info ooddb" onclick="myDropdown()">
+                                <div onclick="myDropdown()" class="ooddb">Lussi <i class="bi bi-caret-down ooddb"></i></div>
+                                <div class="muted ooddb" onclick="myDropdown()">Lusavuvu</div>
+                            </div>
+                        </button>
+
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" class="ooddb">Organisation 1</a>
+                            <a href="#" class="ooddb">Organisation 2</a>
+                            <a href="#" class="ooddb">Organisation 3</a>
                         </div>
-                        <div class="menu-header-info">
-                            <div>Lussi <i class="bi bi-caret-down-"></i></div>
-                            <div class="muted">Lusavuvu</div>
-                        </div>
-                    </button>
+                    </div>
 
                     <!-- <div class="menu-header-dropdown-content">
                         <div class="menu-header-dropdown-item">
@@ -118,7 +126,7 @@
                 </div>
 
                 <div class="menu-item">
-                    <a href="#">
+                    <a href="#" class="active">
                         <span class="icon">
                             <i class="bi bi-circle"></i>
                         </span>
@@ -273,6 +281,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
